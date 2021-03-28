@@ -1,0 +1,82 @@
+@font-face{
+    font-family: "Gilroy-Light";
+    src: url("fonts/Gilroy-Light.otf");
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: "Gilroy-ExtraBold";
+    src: url("fonts/Gilroy-ExtraBold.otf");
+    font-weight: 800;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #361D5A;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: absolute;
+    width: calc(100% - 200px);
+    z-index: 1;
+
+}
+
+header h1{
+    font-family: "Gilroy-ExtraBold";
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+header .dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+header .dropdown svg{ /* Menu Hamburger */
+    fill: white;
+    width: 32px;
+    cursor: pointer;       
+}
+
+header .dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #190e2a;
+    min-width: 130px;
+    left: -98px;
+    z-index: 2;
+}
+
+header .dropdown .dropdown-content a{
+    color: white;
+    font-family: "Gilroy-Light";
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 12px 16px;
+    text-align: right;
+    transition: background-color 0.4s;
+}
+
+header .dropdown .dropdown-content a:hover{
+    display: block;
+}
+
+section{
+    height: 100vh;
+    padding: 0 100px;
+    position: relative;
+
+}
