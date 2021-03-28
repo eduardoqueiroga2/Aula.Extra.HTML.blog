@@ -57,6 +57,7 @@ header .dropdown .dropdown-content{
     min-width: 130px;
     left: -98px;
     z-index: 2;
+    border-radius: 5px;
 }
 
 header .dropdown .dropdown-content a{
@@ -71,6 +72,11 @@ header .dropdown .dropdown-content a{
 }
 
 header .dropdown .dropdown-content a:hover{
+    background-color: #f0ebf7a1;
+    border-radius: 5px;
+}
+
+header .dropdown:hover .dropdown-content{
     display: block;
 }
 
