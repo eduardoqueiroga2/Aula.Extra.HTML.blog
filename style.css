@@ -10,7 +10,6 @@
     font-weight: 800;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -29,14 +28,12 @@ header{
     position: absolute;
     width: calc(100% - 200px);
     z-index: 1;
-
 }
 
 header h1{
     font-family: "Gilroy-ExtraBold";
     color: white;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 
 header .dropdown{
@@ -84,5 +81,74 @@ section{
     height: 100vh;
     padding: 0 100px;
     position: relative;
+}
 
+#primary-screen {
+    background: url("./Images/banner-site.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#primary-screen h1{
+    font-family: "Gilroy-ExtraBold";
+    font-size: 75px;
+    color: white;
+    text-transform: uppercase;    
+}
+
+#primary-screen p{
+    font-family: "Gilroy-Light";
+    color: white;
+    font-size: 24px;
+    width: 410px;
+    margin-bottom: 20px;
+}
+
+#primary-screen a{
+    background: #190e2a;
+    color: white;
+    font-family: "Gilroy-Light";
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 16px;
+    transition: background-color 0.4s;
+    border-radius: 5px;
+}
+
+#primary-screen a:hover{
+    background-color: #f0ebf7a1;
+    border-radius: 5px;
+}
+
+#secondary-screen{
+    display: flex; /* As coisas ficarem uma do lado da outra */
+    align-items: center; /* Alinhamento Vertical "centro" */
+    justify-content: flex-end; /* Alinhamento Horizontal "final da tela" */
+}
+
+#secondary-screen img{
+    position:absolute;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+}
+
+#secondary-screen .publication{
+    width: 50%;
+    color: white;
+}
+
+#secondary-screen .publication h1{
+    font-family: "Gilroy-ExtraBold";
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#secondary-screen .publication p{
+    font-family: "Gilroy-Light";
+    font-size: 18px;
 }
